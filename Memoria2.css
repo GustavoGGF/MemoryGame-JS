@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./Images/648633.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Permanent Marker', cursive;
+    outline: none;
+}
+
+.menu {
+    position: relative;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    display: flex;
+    color: #ff1e00;
+}
+
+.crono {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+
+.logo {
+    color: #fff;
+  
+}
+
+p {
+    font-size: 2em;
+    width: 100%;
+}
+
+span {
+    font-size: 2em;
+    color: #fff;
+}
+
+a {
+    cursor: pointer;
+    position: relative;
+    bottom: 100%;
+    width: 30px;
+    margin-right: 40px;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.card {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 3/4;
+    border-radius: 8px;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+}
+
+.card:nth-child(1) {
+    margin-top: 50px;
+}
+
+.card:nth-child(2) {
+    margin-top: 50px;
+}
+
+.card:nth-child(3) {
+    margin-top: 50px;
+}
+
+.card:nth-child(4) {
+    margin-top: 50px;
+}
+
+.card:nth-child(5) {
+    margin-top: 50px;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #201b2c;
+    border-radius: 8px;
+    transition: all 1s ease;
+}
+
+.front {
+    transform: rotateY(180deg);
+}
+
+.back {
+    background-image: url(./Images/OnePiece.jpg);
+    backface-visibility: hidden;
+}
+
+.reveal-card {
+    transform: rotateY(180deg);
+}
+
+.disable-card {
+    filter: saturate(0);
+    opacity: 0.4;
+}
+
+@media only screen and (max-width: 360px){  
+    html,body {
+        width: 100%;
+        
+    }
+
+    .grid {
+        display: grid;
+        width: 100%;
+        max-width: 330px;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+        margin-top: 50px;
+        height: 70vh;
+        overflow: hidden;
+    }
+    
+
+    .icon {
+        position: absolute;
+        top: 580px;
+        display: flex;
+        backdrop-filter: blur(5px);
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .logo {
+        color: #000; 
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    body {
+        max-height: 120vh;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .icon {
+        position: absolute;
+        top: 600px;
+        display: flex;
+        backdrop-filter: blur(5px);
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .icon:nth-child(1) {
+        margin-left: 30px;
+    }
+
+    .grid {
+        display: grid;
+        width: 100%;
+        max-width: 350px;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+        margin-top: 50px;
+        height: 70vh;
+        overflow: hidden;
+    }
+
+    .logo {
+        color: #000;
+    }
+}

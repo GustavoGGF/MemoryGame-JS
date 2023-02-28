@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Permanent Marker', cursive
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./Images/sda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-header {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.login-input {
+    border: 2px solid;
+    border-radius: 9px;
+    font-size: 1em;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+    outline: none;
+    padding: 15px;
+}
+
+.login-button {
+    background-color: #ee665c;
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    max-width: 300px;
+}
+
+.login-button:disabled {
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+}
+
+.card {
+    width: 100%;
+    height: 200px;
+    background-color: #201b2c;
+}
